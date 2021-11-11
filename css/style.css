@@ -86,8 +86,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--first-color);
-}
-.btn-hero-text {
+  border-radius: 4px;
+  border: none;
 }
 /*----------------------------------------------------------------------- Особенности------------------------------------------------------------------------ */
 .about-work {
@@ -156,7 +156,7 @@ body {
 }
 /*----------------------------------------------------------------------- Подвал------------------------------------------------------------------------------ */
 .about-contacts {
-  background-color: var(--second-text-color);
+  background-color: var(--second-color);
 }
 .addres-map {
   font-family: inherit;
@@ -206,6 +206,8 @@ body {
   font-family: inherit;
   cursor: pointer;
   background: var(--btn-port-color);
+  border-radius: 4px;
+  border: none;
 }
 .main-btn-filter:hover,
 .main-btn-filter:focus {
@@ -213,7 +215,6 @@ body {
   background-color: var(--btn-color);
 }
 
-.main-btn-list
 /*----------------------------------------------------------------проект-------------------------------------------------------------------------------------*/
 .project-title {
   font-weight: bold;
