@@ -1,3 +1,10 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 :root {
   --main-color: #e5e5e5;
   --first-color: #ffffff;
@@ -28,6 +35,9 @@ body {
 /*--------------------------------------------------------------------------------верхняя линия---------------------------------------------------*/
 .about-info {
   background-color: var(--first-color);
+}
+.link-navigation-list {
+  display: flex;
 }
 .navigation-link:hover,
 .mail-link:hover,
