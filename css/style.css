@@ -1,4 +1,3 @@
-h1,
 h2,
 h3,
 p {
@@ -24,9 +23,18 @@ body {
 }
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
+}
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .container-list {
   background: var(--first-color);
@@ -36,8 +44,18 @@ body {
 .about-info {
   background-color: var(--first-color);
 }
+.first-main {
+  display: flex;
+  align-items: center;
+}
 .link-navigation-list {
   display: flex;
+  margin-left: 95px;
+  margin: auto;
+}
+.link-navigation-list,
+.navigation + .navigation {
+  margin-left: 50px;
 }
 .navigation-link:hover,
 .mail-link:hover,
@@ -58,10 +76,17 @@ body {
   background-color: var(--btn-color);
 }
 .navigation-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--second-text-color);
+}
+.link-contacts-list {
+  display: flex;
 }
 .contacts-link,
 .contacts-tel-link {
@@ -86,6 +111,9 @@ body {
 }
 .btn-hero {
   font-family: inherit;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  min-width: 200px;
   background-color: var(--btn-color);
   cursor: pointer;
   font-weight: bold;
@@ -96,7 +124,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--first-color);
-  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   border: none;
 }
 /*----------------------------------------------------------------------- Особенности------------------------------------------------------------------------ */
@@ -118,6 +147,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--third-text-color);
 }
+.spc-text-list {
+  margin: 0;
+}
 /*---------------------------------------------------------------------- Чем мы занимаемся----------------------------------------------------------------- */
 .prof-title {
   font-weight: bold;
@@ -126,6 +158,9 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+.about-profession-list {
+  margin: 0;
 }
 .about-profession {
   background-color: var(--first-color);
@@ -212,12 +247,18 @@ body {
 }
 /*-------------------------------------------------------------отдельно к портфолио----------------------------------------------------------------------*/
 .main-btn-filter {
+  display: inline-block;
+  min-width: 75px;
   font-weight: 500;
   font-family: inherit;
+  padding: 5px 20px;
   cursor: pointer;
   background: var(--btn-port-color);
-  border-radius: 4px;
+  text-align: center;
+  border-radius: 5px;
   border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .main-btn-filter:hover,
 .main-btn-filter:focus {
