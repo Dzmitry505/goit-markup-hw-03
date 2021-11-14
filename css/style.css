@@ -145,7 +145,9 @@ body {
   color: var(--second-text-color);
 }
 .spc-text {
+  display: block;
   font-weight: normal;
+  padding-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -209,6 +211,7 @@ body {
   margin-left: 30px;
 }
 .work-direction {
+  padding-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -253,7 +256,7 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--btn-color);
-  display: block;
+  display: inline-block;
   padding-top: 50px;
   margin-bottom: 20px;
 }
@@ -283,6 +286,10 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.btn-filter + .btn-filter {
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
 .main-btn-filter :not(:first-child) {
   margin-left: 10px;
 }
@@ -300,6 +307,7 @@ body {
 
 /*----------------------------------------------------------------проект-------------------------------------------------------------------------------------*/
 .project-title {
+  padding-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -310,6 +318,28 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.86;
+  padding-bottom: 20px;
   letter-spacing: 0.03em;
   color: var(--third-text-color);
+}
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+  margin-bottom: 95px;
+}
+
+.item-project {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.item-project:nth-child(3n) {
+  margin-right: 0;
+}
+.item-project:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+/*---------------------------------------------------футер-------------------------------------------*/
+.item {
+  padding-bottom: 95px;
 }
