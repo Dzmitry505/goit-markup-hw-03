@@ -97,14 +97,17 @@ body {
 }
 
 /*-----------------------------------------------------------------------------------------герой-------------------------------------------------------*/
-.about-hero {
+.hero {
   background-color: var(--second-color);
+  text-align: center;
+  margin-bottom: 95px;
 }
 .main-hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--first-color);
@@ -112,14 +115,13 @@ body {
 .btn-hero {
   font-family: inherit;
   padding: 10px 30px;
-  margin-bottom: 30px;
+
   min-width: 200px;
   background-color: var(--btn-color);
   cursor: pointer;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.86;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -129,13 +131,17 @@ body {
   border: none;
 }
 /*----------------------------------------------------------------------- Особенности------------------------------------------------------------------------ */
-.about-work {
+.work {
   background-color: var(--first-color);
+}
+.spc-combo + .spc-combo {
+  margin-left: 30px;
 }
 .spc-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-text-color);
@@ -148,22 +154,19 @@ body {
   color: var(--third-text-color);
 }
 .spc-text-list {
-  margin: 0;
+  margin-bottom: 95px;
+  display: flex;
 }
 /*---------------------------------------------------------------------- Чем мы занимаемся----------------------------------------------------------------- */
-.prof-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.67;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-text-color);
-}
 .about-profession-list {
   margin: 0;
 }
 .about-profession {
   background-color: var(--first-color);
+  margin-bottom: 95px;
+}
+.profession {
+  display: flex;
 }
 /*---------------------------------------------------------------------- Наша команда -----------------------------------------------------------------------*/
 .about-team {
@@ -179,17 +182,31 @@ body {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  padding-top: 95px;
+  margin-bottom: 50px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+.photo {
+  margin-bottom: 30px;
 }
 .team-name {
   font-weight: medium;
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 10px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+.team-list {
+  display: flex;
+  padding-bottom: 95px;
+}
+
+.team-info + .team-info {
+  margin-left: 30px;
 }
 .work-direction {
   font-weight: normal;
