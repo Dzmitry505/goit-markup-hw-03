@@ -33,7 +33,7 @@ body {
   text-decoration: none;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -72,6 +72,9 @@ img {
   display: flex;
   margin-left: 94px;
   margin: auto;
+}
+.navigation {
+  display: flex;
 }
 .link-navigation-list,
 .navigation + .navigation {
@@ -123,6 +126,8 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-hero-title {
   max-width: 696px;
@@ -180,7 +185,6 @@ img {
 .spc-text {
   display: block;
   font-weight: normal;
-  padding-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -196,6 +200,7 @@ img {
 }
 .about-profession {
   background-color: var(--first-color);
+  padding-top: 0;
 }
 .profession + .profession {
   margin-left: 30px;
@@ -301,17 +306,14 @@ footer {
 /*-------------------------------------------------------------отдельно к портфолио----------------------------------------------------------------------*/
 .main-btn-filter {
   display: inline-block;
-  min-width: 75px;
   font-weight: 500;
   font-family: inherit;
-  padding: 4px 22px;
+  padding: 6px 22px;
   cursor: pointer;
   background: var(--btn-port-color);
   text-align: center;
   border-radius: 5px;
   border: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .btn-filter + .btn-filter {
   flex-wrap: wrap;
@@ -330,6 +332,8 @@ footer {
 .main-btn-filter:focus {
   color: var(--first-color);
   background-color: var(--btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*----------------------------------------------------------------проект-------------------------------------------------------------------------------------*/
@@ -356,7 +360,8 @@ footer {
 }
 .item-squad {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-item-color);
+  border-top: 0;
 }
 /*.item-project {
   margin-right: 30px;
