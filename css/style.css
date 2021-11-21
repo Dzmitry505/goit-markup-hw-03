@@ -53,6 +53,8 @@ img {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
   letter-spacing: 0.03em;
   color: var(--btn-color);
 }
@@ -71,13 +73,11 @@ img {
 }
 .link-navigation-list {
   display: flex;
-  margin-left: 94px;
-  margin: auto;
+  margin-left: 93px;
 }
 .navigation {
   display: flex;
 }
-.link-navigation-list,
 .navigation + .navigation {
   margin-left: 50px;
 }
@@ -226,8 +226,9 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-.photo {
-  margin-bottom: 30px;
+.words {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-name {
   font-weight: medium;
@@ -246,7 +247,6 @@ img {
   margin-left: 30px;
 }
 .work-direction {
-  padding-bottom: 30px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
@@ -309,6 +309,8 @@ footer {
   display: inline-block;
   font-weight: 500;
   font-family: inherit;
+  font-size: 16px;
+  line-height: 2.17;
   padding: 6px 22px;
   cursor: pointer;
   background: var(--btn-port-color);
